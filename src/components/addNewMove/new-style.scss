@@ -8,7 +8,7 @@
 }
 .new {
   animation: animate 1.5s ease-in-out;
-  height: 100vh;
+  min-height: 100vh;
   input,
   select,
   button,
