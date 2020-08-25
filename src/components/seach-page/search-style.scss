@@ -1,0 +1,42 @@
+
+@keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.search{
+    animation: animate 1.5s ease-in-out;
+    margin: 0 3%;
+    padding-top: 1%;
+    #topPage{
+        position: fixed;
+        top: 3%;
+        width: 100%;
+        height: 15vh;
+        opacity: 0.9;
+        background-color: var(--basic);
+      input{
+        width: 82%;
+        background-color: var(--darkDesign);
+        border: 1px solid var(--lightDesign);
+        padding: 5px 10px;
+        margin: 1% 0 5% 4%;
+        color: var(--lightDesign);
+    }
+      i{
+         font-size: 25px;
+      }
+    }
+    #buttomPage{
+        margin-top:17vh;
+        margin-left: 6%;
+        #category{
+          font-size: larger;
+        }
+    }
+   
+  
+}

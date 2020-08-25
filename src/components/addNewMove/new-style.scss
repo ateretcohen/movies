@@ -1,0 +1,60 @@
+@keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.new{
+    animation: animate 1.5s ease-in-out;
+    input,select,button,span,textarea{
+        margin-left: 40%;
+        transform: translateX(-30%);
+        display:inline-block;
+        width: 60%;
+        color: var(--lightDesign);
+        margin-top: 1%;
+        font-size: larger;
+    }
+    input,select,textarea{
+        background-color: var(--darkDesign);
+        border: 1px solid var(--lightDesign);
+        padding: 8px 20px;
+    }
+    button{
+        background-color: red;
+        border: 1px solid red;
+        margin-top: 3%;
+        padding: 10px 20px;
+    }
+    p{
+        text-align: center;
+        font-size: x-large;
+        padding-top: 2%;
+    }
+    i{
+        margin-left: 22%;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    span{
+        font-size: small;
+        color: red;
+    }
+    @media only screen and (max-width: 768px) {
+        i{
+            margin-left: 5%;
+            font-size: 30px;
+            padding-top: 10%;
+        }
+        input,select,button,span,textarea{
+            width: 80%;
+            transform: translateX(0%);
+            margin-left: 10%;
+        }
+        p{
+            padding-top: 10%;
+        }
+    }
+}

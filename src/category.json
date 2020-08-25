@@ -1,0 +1,44 @@
+[
+    {
+        "ID":"0",
+        "CATEGORY":"Kids"
+    },
+    {
+        "ID":"1",
+        "CATEGORY":"Babeis"
+    },
+    {
+        "ID":"2",
+        "CATEGORY":"Teenager"
+    },
+    {
+        "ID":"3",
+        "CATEGORY":"Comedy"
+    },
+    {
+        "ID":"4",
+        "CATEGORY":"Novel"
+    },
+    {
+        "ID":"5",
+        "CATEGORY":"Documentary"
+    },
+    {
+        "ID":"6",
+        "CATEGORY":"Geographic"
+    },
+    {
+        "ID":"7",
+        "CATEGORY":"Reality"
+    },
+    {
+        "ID":"8",
+        "CATEGORY":"Action"
+    },
+    {
+        "ID":"9",
+        "CATEGORY":"Drama"
+    }
+
+
+]
