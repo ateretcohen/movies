@@ -33,7 +33,7 @@ class New extends Component {
   render() {
     return (
       <div className="new">
-            <i class="fa fa-chevron-left" onClick={()=>this.props.history.push("/")}></i><br/>
+            <i class="fa fa-times" onClick={()=>this.props.history.push("/")}></i><br/>
             <p>Add New Movie</p>
             <input type="text" placeholder="Enter movie name" onChange={(e)=>this.setState({name:e.target.value,error:""})}/><br/>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter premise" onChange={(e)=>this.setState({pramise:e.target.value})}></textarea>

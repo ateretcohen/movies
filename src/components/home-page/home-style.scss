@@ -1,51 +1,67 @@
-
 @keyframes animate {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
-.home{
-    animation: animate 1.5s ease-in-out;
-    height: 100vh;
+  100% {
+    opacity: 1;
+  }
+}
+.home {
+  animation: animate 1.5s ease-in-out;
+  // height: 100vh;
+  // min-height: 100vh;
+  // background-image: url(https://www.listefilm.com/wp-content/uploads/2020/01/lucifer-ana.jpg);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-color: black;
+  .picArea {
     background-image: url(https://www.listefilm.com/wp-content/uploads/2020/01/lucifer-ana.jpg);
     background-size: cover;
-   #search{
-       float: left;
-       padding-left: 2%;
-   }
-   #menu{
-       float: right;
-       padding-right: 2%;
-   }
-   #plus{
-    float: left;  
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .spaceDiv {
+    height: 80vh;
+  }
+  #search {
+    float: left;
     padding-left: 2%;
+  }
+  #menu {
+    float: right;
+    padding-right: 2%;
+  }
+  #plus {
+    float: left;
+    padding-left: 2%;
+  }
+  i {
+    padding-top: 2%;
+    font-size: 30px;
+  }
+  #hrDesign {
+    // position: relative;
+    // top: 79vh;
+    color: red;
+    border: 0.5px solid red;
+    // margin-top: 70vh;
 
-   }
-   i{
-     padding-top: 2%;
-      font-size: 30px;
-   }
-   #hrDesign{
-       position: relative;
-       top:79vh;
-       color:red;
-       border:0.5px solid red;
-       margin:0px ;
-   }
-   .allMovies{
-       position: relative;
-       top:80vh;
-        margin-left: 8%;
-       p{
-           font-weight: bold;
-           font-size: larger;
-       }
-   }
-   
-    @media only screen and (max-width: 768px) {
-   }
+    margin: 0px;
+  }
+  .allMovies {
+    // position: relative;
+    // top: 80vh;
+    margin-left: 8%;
+    p {
+      font-weight: bold;
+      font-size: larger;
+      padding-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .spaceDiv {
+      height: 30vh;
+    }
+  }
 }
