@@ -14,7 +14,7 @@ class Menu extends Component {
     return (
        <div className="menu">
         {/* icon close menu page */}
-        <i class="fa fa-times" onClick={()=>this.props.closeMenu()}></i>
+        <i className="fa fa-times" onClick={()=>this.props.closeMenu()}></i>
         <div className="categories">
         <p>Categories</p>    
         <hr/>

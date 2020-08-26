@@ -23,14 +23,14 @@ class New extends Component {
     });
 
     //check if input name and link not fill throw error
-    if (this.state.name.length == 0 || this.state.link.length == 0) {
+    if (this.state.name.length === 0 || this.state.link.length === 0) {
       this.setState({ error: "Make sure you fill in all the details." });
     }
     //check if rating percent not between 0 to 100 throw error
      else if (
       Number(this.state.rating) < 0 ||
       Number(this.state.rating) > 100 ||
-      this.state.rating.length == 0
+      this.state.rating.length === 0
     ) {
       this.setState({ errorRating: true });
     } 
@@ -55,7 +55,7 @@ class New extends Component {
     return (
       <div className="new">
         {/* onclick back home */}
-        <i class="fa fa-times" onClick={() => this.props.history.push("/")}></i>
+        <i className="fa fa-times" onClick={() => this.props.history.push("/")}></i>
         <br />
         <p>Add New Movie</p>
         {/* fill movie ditails */}
@@ -68,7 +68,7 @@ class New extends Component {
         <br />
         {/* movie premise */}
         <textarea
-          class="form-control"
+          className="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
           placeholder="Enter premise"

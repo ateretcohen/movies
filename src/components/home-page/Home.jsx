@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./home-style.scss";
 import Movie from "../movieCard/Movie";
 import Menu from "../menu-page/Menu";
-import Search from "../seach-page/Search";
 
 class Home extends Component {
   constructor(props) {
@@ -37,19 +36,19 @@ class Home extends Component {
           ) : null}
            {/* search page icon */}
           <i
-            class="fa fa-search"
+            className="fa fa-search"
             id="search"
             onClick={() => this.props.history.push("/search")}
           ></i>
           {/* add new movie icon */}
           <i
-            class="fa fa-plus"
+            className="fa fa-plus"
             id="plus"
             onClick={() => this.props.history.push("/new")}
           ></i>
           {/* turn on state property -> open menu */}
           <i
-            class="fa fa-bars"
+            className="fa fa-bars"
             id="menu"
             onClick={() => this.setState({ menu: true })}
           ></i>

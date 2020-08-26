@@ -25,7 +25,7 @@ class Search extends Component {
       <div className="search">
           <div id="topPage">
 
-            <i class="fa fa-chevron-left" onClick={()=>this.goBack()}></i>
+            <i className="fa fa-chevron-left" onClick={()=>this.goBack()}></i>
             <input type="text" placeholder="search" onChange={(e)=>this.setState({event:e.target.value})}/>
             <br/>
           </div>
@@ -39,7 +39,7 @@ class Search extends Component {
             {/* map all movies list */}
               {
                movies.map((M,i)=>{
-                   return <Movie IMG={M.IMG} movie={M} categories={this.props.categories}/>
+                   return <Movie key={i} IMG={M.IMG} movie={M} categories={this.props.categories}/>
                }) 
             }
          </div>

@@ -11,7 +11,7 @@ class Details extends Component {
  }
 
   render() {
-      const category=this.props.categories.filter(C=>C.ID==this.props.movie.CATEGORY);
+      const category=this.props.categories.filter(C=>C.ID===this.props.movie.CATEGORY);
     return (
       <div className="Details">
         <div
@@ -19,7 +19,7 @@ class Details extends Component {
           style={{ backgroundImage: "url(" + this.props.movie.IMG + ")" }}
         >
           {/* onClick close movie ditail page */}
-          <i class="fa fa-times" onClick={() => this.props.closePopUp()}></i>
+          <i className="fa fa-times" onClick={() => this.props.closePopUp()}></i>
           <br />
 
           <div className="buttomPage">
@@ -28,9 +28,9 @@ class Details extends Component {
             <p className="pramis">{this.props.movie.PRAMISE}</p>
 
             {/* reting by percent- bootstrap*/}
-            <div class="progress">
+            <div className="progress">
               <div
-                class="progress-bar"
+                className="progress-bar"
                 role="progressbar"
                 style={{
                   width: String(this.props.movie.RATING) + "%",
