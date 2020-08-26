@@ -16,31 +16,38 @@ class App extends Component {
     categories: [],
     Category: null,
   };
+
+  //get data from Json and localStorage
   componentDidMount() {
     // localStorage.clear();
+
+    //get all movies from localStorage
     var allMovies = JSON.parse(localStorage.getItem("allMovies"));
-    console.log(allMovies);
+    //set in state array movies
     if (allMovies) {
       this.setState({ movies: allMovies });
-      console.log("sweet");
     } else {
       this.setState({ movies: Data });
     }
-    let categoryList = [];
-    Category.map((C) => {
-      categoryList.push({
-        ID: C.ID,
-        CATEGORY: C.CATEGORY,
-      });
-    });
+
+    //get category list from Json to state
+    let categoryList = Category;
     this.setState({ categories: categoryList });
   }
+
+  // menu page -> open category in search page
   openCategory = (ID, CATEGORY) => {
+    //get category
     let Category = { ID: ID, CATEGORY: CATEGORY };
+    //save to state
     this.setState({ Category: Category });
   };
+
+  // add new movie to localStorage
   addNewMovie = (name, link, category, rating, pramise) => {
     let movies = this.state.movies;
+   
+    //bulid object
     let m = {
       ID: String(this.state.movies.length),
       NAME: name,
@@ -49,6 +56,7 @@ class App extends Component {
       IMG: link,
       PRAMISE: pramise,
     };
+    //add to state list movies
     movies.push(m);
     this.setState({ movies: movies });
 
@@ -63,6 +71,7 @@ class App extends Component {
         {
           <Router history={history}>
             <Switch>
+              {/* home-page */}
               <Route
                 exact
                 path={"/"}
@@ -75,6 +84,7 @@ class App extends Component {
                   />
                 )}
               />
+              {/* search-page */}
               <Route
                 exact
                 path={"/search"}
@@ -89,10 +99,12 @@ class App extends Component {
                           )
                     }
                     Category={this.state.Category}
+                    categories={this.state.categories}
                     deleteCategory={() => this.setState({ Category: null })}
                   />
                 )}
               />
+              add-mew-movie-page
               <Route
                 exact
                 path={"/new"}

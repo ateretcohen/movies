@@ -7,7 +7,6 @@
     left: 0;
     opacity: 0.96;
     z-index: 2;
-
     .container{
         width: 40%;
         background-size: cover;
@@ -22,14 +21,17 @@
            padding: 3%;
            background-color: var(--darkDesign);
            margin-top: 60vh;
-           p{
+           .name{
                font-size: large;
+               font-weight: bold;
            }
            .pramis{
                font-size: small;
            }
        }
     }
+
+    //to mobile 
     @media only screen and (max-width: 768px) {
         .container{
             width: 100%;

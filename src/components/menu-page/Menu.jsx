@@ -13,10 +13,13 @@ class Menu extends Component {
   render() {
     return (
        <div className="menu">
+        {/* icon close menu page */}
         <i class="fa fa-times" onClick={()=>this.props.closeMenu()}></i>
         <div className="categories">
         <p>Categories</p>    
         <hr/>
+        {/* show all categories */}
+        {/* onClick= open category movies by function openCategory=() in home page */}
         {
             this.props.categories.map((C,i)=>{
             return <div key={i} onClick={()=>this.props.openCategory(C.ID,C.CATEGORY)}><p className="pCategories">{C.CATEGORY}</p></div>
