@@ -51,7 +51,7 @@
         "ID":"6",
         "NAME":"titanik",
         "CATEGORY":"4",
-        "RATING":25,
+        "RATING":50,
         "IMG":"https://www.sratim.co.il/photos/titles/normal/1/m421_20111115174800_652873458456.jpg",
         "PRAMISE":"A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
     } , 
@@ -68,7 +68,7 @@
         "NAME":"frozen",
         "CATEGORY":"0",
         "RATING":80,
-        "IMG":"https://lh3.googleusercontent.com/aMQqa1RYzMFq40hqDG215XCKdQkAluCvUpGtq_T1QPWOS7-ilvazC6DVV3np4uL96vT7yg",
+        "IMG":"https://i.pinimg.com/originals/24/64/54/2464548eb4a86bbb17fa6ff8c4a7d325.jpg",
         "PRAMISE":"Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom."
     } 
     

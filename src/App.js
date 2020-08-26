@@ -19,7 +19,7 @@ class App extends Component {
 
   //get data from Json and localStorage
   componentDidMount() {
-    // localStorage.clear();
+     localStorage.clear();
 
     //get all movies from localStorage
     var allMovies = JSON.parse(localStorage.getItem("allMovies"));
