@@ -19,6 +19,7 @@ class App extends Component {
   componentDidMount() {
     // localStorage.clear();
     var allMovies = JSON.parse(localStorage.getItem("allMovies"));
+    console.log(allMovies);
     if (allMovies) {
       this.setState({ movies: allMovies });
       console.log("sweet");
@@ -50,6 +51,8 @@ class App extends Component {
     };
     movies.push(m);
     this.setState({ movies: movies });
+
+
     // save to loacl storage
     localStorage.setItem("singleMovies", JSON.stringify(m));
     localStorage.setItem("allMovies", JSON.stringify(movies));
@@ -96,6 +99,7 @@ class App extends Component {
                 render={(props) => (
                   <New
                     {...props}
+                    movies={this.state.movies}
                     categories={this.state.categories}
                     addNewMovie={this.addNewMovie}
                   />
